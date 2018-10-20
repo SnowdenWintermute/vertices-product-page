@@ -1,0 +1,141 @@
+$colors: (
+    bgcolor: white,
+    primary: blue,
+    navBg: #de6e9d,
+    navHamburger: #d94986,
+    navLink: white,
+    navLinkDropdown: #e2acc2,
+    navLinkCurrent: #f384b3,
+    navLinkHover: #eed1dd,
+);
+
+$bigshadow: 0px 10px 30px rgba(0,0,0,.3);
+
+@function color($color-name){
+    @return map-get($colors, $color-name);
+}
+
+$mobile: 840px;
+$desktop: 1000px;
+@mixin mobile {
+    @media (max-width: #{$mobile}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: color(bgcolor);
+    font-family: 'Open Sans';
+}
+
+nav {
+    z-index: 6;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    left: 0;
+    right: 0;
+    background: color(navBg);
+    width:95%;
+    height: 80px;
+    border-radius: 20px; 
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    overflow: hidden;
+    transition: height .4s ease-out;
+    #hamburger{
+        display: none;
+    }
+    #brand{
+        padding: 15px;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        width:93%;
+        justify-content: space-evenly;
+    }
+    ul a{
+        text-decoration: none;
+        color: color(navLink);
+        font-size: 1.6em;
+        transition: text-shadow .3s;
+        &:hover{
+            text-shadow: 0px 0px 10px white;
+        }
+    }
+    @include desktop{
+        width: 980px;
+    }
+    @include mobile{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        #hamburger{
+            display: inline-block;
+            color:color(navHamburger);
+            position: absolute;
+            top:0;
+            right:0;
+            padding: 7.5px 25px;
+            font-size: 50px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #brand{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            top:0;
+            left:0;
+            height: 70px;
+            img{
+                height:100%;
+            }
+        }
+        ul {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            li{
+                height:50px;
+                width: 98%;
+                background: color(navLinkDropdown);
+                transition: background-color .5s;
+                a{
+                    height:100%;
+                    width:100%;
+                    display:flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &:hover{
+                    background: color(navLinkHover);
+                }
+            }
+        }
+        #navLinksLeft{
+            margin-top: 80px;
+        }
+    }
+}
+
+/*Show class for nav*/
+.show{
+    height:300px;
+}
