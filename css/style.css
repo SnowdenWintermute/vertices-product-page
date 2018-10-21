@@ -6,8 +6,13 @@
 }
 
 body {
-  background: white;
+  background: #eed1dd;
   font-family: 'Open Sans';
+}
+
+svg {
+  height: 100%;
+  width: 100%;
 }
 
 nav {
@@ -67,7 +72,7 @@ nav ul a:hover {
   text-shadow: 0px 0px 10px white;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1024px) {
   nav {
     width: 980px;
   }
@@ -79,12 +84,13 @@ nav ul a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-top: 80px;
   }
   nav #hamburger {
     display: inline-block;
@@ -123,6 +129,8 @@ nav ul a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
   nav ul li {
     height: 50px;
@@ -147,13 +155,156 @@ nav ul a:hover {
   nav ul li:hover {
     background: #eed1dd;
   }
-  nav #navLinksLeft {
-    margin-top: 80px;
-  }
 }
 
 /*Show class for nav*/
 .show {
   height: 300px;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1024px;
+  margin: 0 auto;
+  background: white;
+}
+
+main header {
+  max-width: 1024px;
+  height: 140px;
+  -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7), 0px -30px 50px -50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7), 0px -30px 50px -50px rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main header h1 {
+  font-size: 40px;
+  margin: 50px 0;
+}
+
+main .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+main p {
+  margin: 0px 15px 0px 15px;
+}
+
+main .about-text-section {
+  width: 512px;
+}
+
+main #projects {
+  max-width: 1024px;
+}
+
+@media (max-width: 1024px) {
+  main #projects p {
+    max-width: 512px;
+  }
+}
+
+main h3 {
+  text-align: center;
+  margin: 30px;
+}
+
+footer {
+  background: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+footer #links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1024px;
+}
+
+footer #links img {
+  height: 50px;
+  margin: 15px;
+}
+
+footer #links ul {
+  list-style: none;
+  text-align: center;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer #links ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+footer #links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer #links ul li a:hover {
+  text-decoration: underline;
+}
+
+footer #footer-info {
+  height: 70px;
+  color: white;
+  background-color: #111;
+  width: 100%;
+}
+
+footer #footer-info p {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /*# sourceMappingURL=style.css.map */

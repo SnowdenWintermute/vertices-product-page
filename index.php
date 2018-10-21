@@ -33,6 +33,35 @@
         <div id="slide-tab-holder"></div>
     </div>
 
+    <main>
+        <section id="about">
+        <header id="about-header"><h1>ABOUT</h1></header>
+        <div class="flex-container" id="about-text">
+            <div class="about-text-section" id="about-text-vert">
+                <h3 class="sub-header">VERTICES</h3>
+                <div><p>
+                Vert's job is to design and create content for our movies and games. All our virtual worlds are carefully crafted by Vert with love and care.
+                </p></div>
+            </div>
+            <div class="about-text-section" id="about-text-maliu">
+                <h3 class="sub-header">MALIU</h3>
+                <div><p>
+                Maliu is the programmer. They need a description for this info text. As soon as they submit me one I'll insert it in this section right here, right here this section.
+                </p></div>        
+            </div>
+        </div>
+        </section>
+
+        <section id="projects">
+        <header id="projects-header"><h1>PROJECTS</h1></header>
+            <h3 class="sub-header">Low Poly Racer</h3>
+            <div class="flex-container">
+            <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </p>
+            </div>
+        </section>
+    </main>
 <script src="./js/touchEvents.js"></script>
 <script src="./js/slider.js"></script>
 <script src="./js/index.js"></script>
