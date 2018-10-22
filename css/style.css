@@ -1,8 +1,23 @@
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/Cocogoose Pro-trial.ttf");
+}
+
+@font-face {
+  font-family: "TheLightFont";
+  src: url("../fonts/TheLightFont.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Arial";
+}
+
+html, body {
+  height: 100%;
 }
 
 body {
@@ -13,6 +28,10 @@ body {
 svg {
   height: 100%;
   width: 100%;
+}
+
+h1, h3 {
+  font-family: "Cocogoose";
 }
 
 nav {
@@ -66,6 +85,7 @@ nav ul a {
   font-size: 1.6em;
   -webkit-transition: text-shadow .3s;
   transition: text-shadow .3s;
+  font-family: "TheLightFont";
 }
 
 nav ul a:hover {
@@ -250,21 +270,32 @@ footer #links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  min-height: 90px;
   width: 100%;
   max-width: 1024px;
 }
 
-footer #links img {
-  height: 50px;
+footer #links a {
+  height: 45px;
   margin: 15px;
+}
+
+@media (max-width: 1024px) {
+  footer #links a {
+    margin-bottom: 0;
+  }
+}
+
+footer #links img {
+  height: 45px;
 }
 
 footer #links ul {
@@ -274,9 +305,15 @@ footer #links ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 100%;
 }
 
 footer #links ul li {
@@ -293,6 +330,34 @@ footer #links ul li a:hover {
   text-decoration: underline;
 }
 
+footer #footer-social-links {
+  max-width: 100%;
+}
+
+footer #footer-social-links ul {
+  width: 300px;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+footer #footer-social-links ul li i {
+  font-size: 40px;
+  color: white;
+  -webkit-transition: color ease .3s;
+  transition: color ease .3s;
+}
+
+footer #footer-social-links ul li i:hover {
+  color: #f384b3;
+}
+
 footer #footer-info {
   height: 70px;
   color: white;
@@ -306,5 +371,90 @@ footer #footer-info p {
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.page-header {
+  height: 300px;
+  position: relative;
+}
+
+.page-header h1 {
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  pointer-events: none;
+}
+
+.page-body {
+  min-height: calc(100% - 300px - 215px);
+}
+
+form {
+  margin: auto 0;
+  width: 100%;
+}
+
+form label {
+  margin: 10px auto;
+}
+
+form input, form textarea, form button {
+  margin: 10px auto;
+  width: 300px;
+  max-width: 95%;
+  display: block;
+  font-family: "arial";
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid #de6e9d;
+  background: #eed1dd;
+}
+
+form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, form button::-webkit-input-placeholder {
+  font-family: "arial";
+  color: black;
+}
+
+form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, form button:-ms-input-placeholder {
+  font-family: "arial";
+  color: black;
+}
+
+form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, form button::-ms-input-placeholder {
+  font-family: "arial";
+  color: black;
+}
+
+form input::placeholder, form textarea::placeholder, form button::placeholder {
+  font-family: "arial";
+  color: black;
+}
+
+form input:focus, form textarea:focus, form button:focus {
+  -webkit-box-shadow: 0px 0px 3px #d94986;
+          box-shadow: 0px 0px 3px #d94986;
+}
+
+form input {
+  height: 40px;
+}
+
+form textarea {
+  height: 200px;
+  resize: none;
+}
+
+form button {
+  background: #f384b3;
+}
+
+form button:hover, form button:focus {
+  background: #eed1dd;
 }
 /*# sourceMappingURL=style.css.map */

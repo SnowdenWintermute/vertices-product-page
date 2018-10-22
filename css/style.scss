@@ -11,6 +11,15 @@ $colors: (
     footerDark: #111
 );
 
+@font-face{
+    font-family: "Cocogoose";
+    src: url('../fonts/Cocogoose Pro-trial.ttf'),
+}
+@font-face{
+    font-family: "TheLightFont";
+    src: url('../fonts/TheLightFont.ttf'),
+}
+
 $bigshadow: 0px 10px 30px rgba(0,0,0,.3);
 
 @function color($color-name){
@@ -39,8 +48,11 @@ $desktop: 1024px;
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Arial";
 }
-
+html, body{
+    height:100%;
+}
 body{
     background: color(navLinkHover);
     font-family: 'Open Sans';
@@ -49,6 +61,11 @@ svg{
     height: 100%;
     width: 100%;
 }
+
+h1, h3{
+    font-family: "Cocogoose";
+}
+// NAVBAR
 nav {
     z-index: 6;
     position: absolute;
@@ -83,6 +100,7 @@ nav {
         color: color(navLink);
         font-size: 1.6em;
         transition: text-shadow .3s;
+        font-family: "TheLightFont";
         &:hover{
             text-shadow: 0px 0px 10px white;
         }
@@ -148,6 +166,7 @@ nav {
     height:300px;
 }
 
+// MAIN BODY
 main{
     display: flex;
     flex-direction: column;
@@ -194,6 +213,7 @@ main{
     }
 }
 
+// FOOTER
 footer{
     background: color(footerLight);
     display: flex;
@@ -202,21 +222,31 @@ footer{
     width:100%;
     #links{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        min-height:90px;
         width:100%;
         max-width: 1024px;
-        img{
-            height: 50px;
+        a{
+            height: 45px;
             margin: 15px;
+            @include less1024{
+                margin-bottom:0;
+            }
+        }
+        img{
+            height: 45px;
         }
         ul{
             list-style: none;
             text-align: center;
             height: 90px;
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             align-items: center;
+            max-width: 100%;
             li{
                 display: inline-block;
                 margin: 0 10px;
@@ -225,6 +255,27 @@ footer{
                     text-decoration: none;
                     &:hover{
                         text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    #footer-social-links{
+        max-width: 100%;;
+        ul{
+            width: 300px;
+            max-width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+            margin-bottom: 15px;
+            li{
+                i{
+                    font-size: 40px;
+                    color: white;
+                    transition: color ease .3s;
+                    &:hover{
+                        color: color(navLinkCurrent);
                     }
                 }
             }
@@ -240,6 +291,67 @@ footer{
             position: relative;
             top: 50%;
             transform: translateY(-50%);
+        }
+    }
+}
+
+//Pages
+.page-header{
+    height: 300px;
+    position: relative;
+    h1{
+        text-align: center;
+        font-size: 40px;
+        position: absolute;
+        top: 55%;
+        left:0;
+        right:0;
+        margin-left: auto;
+        margin-right: auto;
+        pointer-events: none;
+    }
+}
+
+//contact
+.page-body{
+    min-height: calc(100% - 300px - 215px);
+}
+form{
+    margin: auto 0;
+    width: 100%;
+    label{
+        margin: 10px auto;
+    }
+    input, textarea, button{
+        margin: 10px auto;
+        width: 300px;
+        max-width: 95%;
+        display: block;
+        font-family: "arial";
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        border: 2px solid color(navBg);
+        background: color(navLinkHover);
+        &::placeholder{
+            font-family: "arial";
+            color: black;
+        }
+        &:focus{
+            box-shadow: 0px 0px 3px color(navHamburger);
+        }
+    }
+    input{
+        height: 40px;
+    }
+    textarea{
+        height: 200px;
+        resize: none;
+    }
+    button{
+        background: color(navLinkCurrent);
+        &:hover, &:focus{
+            background: color(navLinkHover);
         }
     }
 }

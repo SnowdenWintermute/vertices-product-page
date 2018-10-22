@@ -204,9 +204,8 @@
 }
 
 .slide-icon-visible a {
-  display: block;
+  display: inline-block;
   height: 100%;
-  width: 100%;
 }
 
 .slide-icon-fade {

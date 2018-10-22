@@ -15,20 +15,8 @@
           </svg>
           </div>
         <div class="slide-img slide-offscreen-right" id="img1"><img src="./img/1.png" alt=""></div>
-        <div class="slide-item slide-text-hidden" id="txt1"><h1>Vertices</h1></div>
-        <div class="slide-item slide-icon slide-icon-hidden" id="icon1">
-            <a href="https://www.youtube.com/channel/UCjqYIEahx0tFxwrJgtGBxQw/featured" target="_blank">
-            <img src="./img/youtube.png" alt=""></a></div>
         <div class="slide-img slide-offscreen-right" id="img2"><img src="./img/2.png" alt=""></div>
-        <div class="slide-item slide-text-hidden" id="txt2"><h1>3D Models</h1></div>
-        <div class="slide-item slide-icon slide-icon-hidden" id="icon2">
-            <a href="https://www.twitch.tv/verttttices" target="_blank">
-            <img src="./img/twitch.jpg" alt=""></a></div>
         <div class="slide-img slide-offscreen-right" id="img3"><img src="./img/3.jpg" alt=""></div>
-        <div class="slide-item slide-text-hidden" id="txt3"><h1>Racing Game</h1></div>
-        <div class="slide-item slide-icon slide-icon-hidden" id="icon3">
-            <a href="#" target="_blank">
-            <img src="./img/instaFull.jpg" alt=""></a></div>
 
         <div id="slide-tab-holder"></div>
     </div>

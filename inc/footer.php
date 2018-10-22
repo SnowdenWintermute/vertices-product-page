@@ -7,24 +7,36 @@
         <div id="footer-links-holder">
             <ul>
                 <li>
-                    <a href="#about">About</a>
+                    <a href="about.php">About</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="projects.php">Projects</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="contact.php">Contact</a>
                 </li>
                 <li>
-                    <a href="">Downloads</a>
+                    <a href="downloads.php">Downloads</a>
                 </li>
             </ul>
         </div>
-        <div id="footer-social-links-holder">
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-twitch"></i>
-            <i class="fab fa-instagram"></i>
-        </div>
+    </div>
+
+    <div id="footer-social-links">
+        <ul>
+            <li>
+                <a href="https://www.youtube.com/channel/UCjqYIEahx0tFxwrJgtGBxQw/featured" target="_blank">
+                <i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+                <a href="https://www.twitch.tv/verttttices">
+                <i class="fab fa-twitch"></i></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/repeatedd/">
+                <i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
     </div>
 
     <div id="footer-info"><p>
