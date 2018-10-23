@@ -1,5 +1,5 @@
 <?php include('inc/header.php') ?>
-
+<div id="nav-spacer"></div>
 <div class="slide-container" id="slide-container">
         <div class="slider-btn slider-btn-next btn-hidden" id="slider-btn-prev">
             <svg class="svg" version="1.1" xmlns="http://www.w3.org/1999/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">

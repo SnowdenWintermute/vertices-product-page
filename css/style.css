@@ -34,18 +34,23 @@ h1, h3 {
   font-family: "Cocogoose";
 }
 
+#nav-spacer {
+  height: 80px;
+  background: #de6e9d;
+  width: 100%;
+}
+
 nav {
   z-index: 6;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
   left: 0;
   right: 0;
   background: #de6e9d;
-  width: 95%;
+  width: 100%;
+  max-width: 1024px;
   height: 80px;
-  border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,12 +95,6 @@ nav ul a {
 
 nav ul a:hover {
   text-shadow: 0px 0px 10px white;
-}
-
-@media (min-width: 1024px) {
-  nav {
-    width: 980px;
-  }
 }
 
 @media (max-width: 840px) {
@@ -190,16 +189,14 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1024px;
   margin: 0 auto;
   background: white;
 }
 
 main header {
-  max-width: 1024px;
-  height: 140px;
-  -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7), 0px -30px 50px -50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7), 0px -30px 50px -50px rgba(0, 0, 0, 0.7);
+  height: 180px;
+  -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,8 +233,9 @@ main .about-text-section {
   width: 512px;
 }
 
-main #projects {
+main #projects p {
   max-width: 1024px;
+  margin: 0px 15px 0px 15px;
 }
 
 @media (max-width: 1024px) {
@@ -248,7 +246,7 @@ main #projects {
 
 main h3 {
   text-align: center;
-  margin: 30px;
+  margin: 70px;
 }
 
 footer {
@@ -316,6 +314,12 @@ footer #links ul {
   max-width: 100%;
 }
 
+@media (max-width: 450px) {
+  footer #links ul {
+    max-width: 300px;
+  }
+}
+
 footer #links ul li {
   display: inline-block;
   margin: 0 10px;
@@ -374,15 +378,20 @@ footer #footer-info p {
 }
 
 .page-header {
-  height: 300px;
+  height: 200px;
   position: relative;
+  background: white;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .page-header h1 {
   text-align: center;
   font-size: 40px;
   position: absolute;
-  top: 55%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
   right: 0;
   margin-left: auto;
@@ -392,28 +401,51 @@ footer #footer-info p {
 
 .page-body {
   min-height: calc(100% - 300px - 215px);
+  width: 100%;
+  -webkit-box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+}
+
+.page-body section {
+  -webkit-box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  background: white;
+  padding-bottom: 100px;
 }
 
 form {
-  margin: auto 0;
-  width: 100%;
+  margin: 0 auto;
+  width: 900px;
+  max-width: 100%;
+  height: 650px;
+  background: #EEE;
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 4px 5px black;
+          box-shadow: 0px 4px 5px black;
 }
 
 form label {
-  margin: 10px auto;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+form h3 {
+  font-family: arial;
+  padding: 60px 0px 0px 0px;
 }
 
 form input, form textarea, form button {
-  margin: 10px auto;
-  width: 300px;
-  max-width: 95%;
+  margin: 10px 50px;
+  width: 400px;
+  max-width: 80%;
   display: block;
   font-family: "arial";
   padding: 10px;
   font-size: 20px;
-  border-radius: 10px;
-  border: 2px solid #de6e9d;
-  background: #eed1dd;
+  border: 2px solid;
+  -webkit-box-shadow: 0px 2px 3px black;
+          box-shadow: 0px 2px 3px black;
 }
 
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, form button::-webkit-input-placeholder {
@@ -437,8 +469,8 @@ form input::placeholder, form textarea::placeholder, form button::placeholder {
 }
 
 form input:focus, form textarea:focus, form button:focus {
-  -webkit-box-shadow: 0px 0px 3px #d94986;
-          box-shadow: 0px 0px 3px #d94986;
+  -webkit-box-shadow: 0px 2px 3px #d94986;
+          box-shadow: 0px 2px 3px #d94986;
 }
 
 form input {
@@ -451,10 +483,130 @@ form textarea {
 }
 
 form button {
-  background: #f384b3;
+  background: white;
 }
 
 form button:hover, form button:focus {
   background: #eed1dd;
+  -webkit-box-shadow: 0px 2px 3px #d94986;
+          box-shadow: 0px 2px 3px #d94986;
+}
+
+.project-holder {
+  max-width: 512px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 120px;
+}
+
+.project-holder img {
+  height: 200px;
+  max-width: 100%;
+}
+
+.about-page section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-page section p {
+  max-width: 100%;
+}
+
+.about-page .what-we-do p {
+  width: 512px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.about-page .our-team .team-members-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.about-page .our-team .team-member {
+  width: 512px;
+  max-width: 100%;
+  padding: 0px 30px;
+}
+
+@media (max-width: 400px) {
+  .about-page .our-team .team-member {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.about-page .our-team .team-member-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100vw;
+}
+
+@media (max-width: 400px) {
+  .about-page .our-team .team-member-header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.about-page .our-team .team-member-header img {
+  height: 130px;
+}
+
+.about-page .our-team .team-member-header h4 {
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+  .about-page .our-team .team-member-header h4 {
+    margin: 10px;
+  }
+}
+
+.about-page .our-team p {
+  margin: 30px 30px;
 }
 /*# sourceMappingURL=style.css.map */
