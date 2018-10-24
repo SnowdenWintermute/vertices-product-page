@@ -77,11 +77,7 @@ h1{
 }
 // NAVBAR
 #nav-bottom-border, .nav-bottom-border{
-    height: 10px;
-    position: relative;
-    background: color(navLinkDropdown);
-    z-index: 10 !important;
-    box-shadow: 0px 0px 10px 8px color(navLinkDropdown);
+
 }
 .nav-bottom-border-hidden{
     box-shadow: none;
@@ -223,6 +219,7 @@ main{
         box-shadow: 0px 30px 50px -50px rgba(0,0,0,.7);
     }
     #projects{
+        min-height: 700px;
         p{
             max-width:1024px;
             margin: 0px 15px 0px 15px;

@@ -34,15 +34,6 @@ h1 {
   font-family: "Cocogoose";
 }
 
-#nav-bottom-border, .nav-bottom-border {
-  height: 10px;
-  position: relative;
-  background: #e2acc2;
-  z-index: 10 !important;
-  -webkit-box-shadow: 0px 0px 10px 8px #e2acc2;
-          box-shadow: 0px 0px 10px 8px #e2acc2;
-}
-
 .nav-bottom-border-hidden {
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -268,6 +259,10 @@ main .about-text-section {
 main #about {
   -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+}
+
+main #projects {
+  min-height: 700px;
 }
 
 main #projects p {
