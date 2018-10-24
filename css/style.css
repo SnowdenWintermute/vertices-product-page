@@ -30,27 +30,32 @@ svg {
   width: 100%;
 }
 
-h1, h3 {
+h1 {
   font-family: "Cocogoose";
 }
 
-#nav-spacer {
-  height: 80px;
-  background: #de6e9d;
-  width: 100%;
+#nav-bottom-border, .nav-bottom-border {
+  height: 10px;
+  position: relative;
+  background: #e2acc2;
+  z-index: 10 !important;
+  -webkit-box-shadow: 0px 0px 10px 8px #e2acc2;
+          box-shadow: 0px 0px 10px 8px #e2acc2;
+}
+
+.nav-bottom-border-hidden {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 nav {
-  z-index: 6;
-  position: absolute;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   background: #de6e9d;
   width: 100%;
-  max-width: 1024px;
-  height: 80px;
+  height: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,9 +65,38 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow: hidden;
   -webkit-transition: height .4s ease-out;
   transition: height .4s ease-out;
+}
+
+nav #nav-links-holder {
+  width: 100%;
+  max-width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  overflow: hidden;
+}
+
+@media (max-width: 840px) {
+  nav #nav-links-holder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 nav #hamburger {
@@ -109,7 +143,7 @@ nav ul a:hover {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 80px;
+    padding-top: 140px;
   }
   nav #hamburger {
     display: inline-block;
@@ -117,7 +151,7 @@ nav ul a:hover {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 7.5px 25px;
+    margin: 40px 40px;
     font-size: 50px;
     font-weight: bold;
     cursor: pointer;
@@ -126,7 +160,7 @@ nav ul a:hover {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5px;
+    margin-top: 32.5px;
     top: 0;
     left: 0;
     height: 70px;
@@ -178,7 +212,7 @@ nav ul a:hover {
 
 /*Show class for nav*/
 .show {
-  height: 300px;
+  height: 365px;
 }
 
 main {
@@ -195,8 +229,6 @@ main {
 
 main header {
   height: 180px;
-  -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
-          box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -231,6 +263,11 @@ main p {
 
 main .about-text-section {
   width: 512px;
+}
+
+main #about {
+  -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+          box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
 }
 
 main #projects p {
@@ -399,16 +436,18 @@ footer #footer-info p {
   pointer-events: none;
 }
 
+@media (max-width: 450px) {
+  .page-header h1 {
+    font-size: 30px;
+  }
+}
+
 .page-body {
   min-height: calc(100% - 300px - 215px);
   width: 100%;
-  -webkit-box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
 }
 
 .page-body section {
-  -webkit-box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
-          box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
   width: 100%;
   background: white;
   padding-bottom: 100px;
@@ -418,11 +457,11 @@ form {
   margin: 0 auto;
   width: 900px;
   max-width: 100%;
-  height: 650px;
+  height: 750px;
   background: #EEE;
   margin-top: 50px;
-  -webkit-box-shadow: 0px 4px 5px black;
-          box-shadow: 0px 4px 5px black;
+  -webkit-box-shadow: 0px 1px 3px 1px black;
+          box-shadow: 0px 1px 3px 1px black;
 }
 
 form label {
@@ -443,9 +482,9 @@ form input, form textarea, form button {
   font-family: "arial";
   padding: 10px;
   font-size: 20px;
-  border: 2px solid;
-  -webkit-box-shadow: 0px 2px 3px black;
-          box-shadow: 0px 2px 3px black;
+  border: 1px solid;
+  -webkit-box-shadow: 0px 1px 2px black;
+          box-shadow: 0px 1px 2px black;
 }
 
 form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, form button::-webkit-input-placeholder {
@@ -529,13 +568,18 @@ form button:hover, form button:focus {
   max-width: 100%;
 }
 
+.about-page section#our-team {
+  -webkit-box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+          box-shadow: inset 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+}
+
 .about-page .what-we-do p {
   width: 512px;
   padding: 10px;
   max-width: 100%;
 }
 
-.about-page .our-team .team-members-holder {
+.about-page #our-team .team-members-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -548,14 +592,14 @@ form button:hover, form button:focus {
   max-width: 1024px;
 }
 
-.about-page .our-team .team-member {
+.about-page #our-team .team-member {
   width: 512px;
   max-width: 100%;
   padding: 0px 30px;
 }
 
 @media (max-width: 400px) {
-  .about-page .our-team .team-member {
+  .about-page #our-team .team-member {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -569,20 +613,27 @@ form button:hover, form button:focus {
   }
 }
 
-.about-page .our-team .team-member-header {
+.about-page #our-team .team-member-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 100vw;
 }
 
 @media (max-width: 400px) {
-  .about-page .our-team .team-member-header {
+  .about-page #our-team .team-member-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -590,23 +641,68 @@ form button:hover, form button:focus {
   }
 }
 
-.about-page .our-team .team-member-header img {
+.about-page #our-team .team-member-header img {
   height: 130px;
 }
 
-.about-page .our-team .team-member-header h4 {
-  font-size: 30px;
-  margin-left: 30px;
+.about-page #our-team .team-member-header h4 {
+  font-size: 20px;
   margin-top: 10px;
 }
 
 @media (max-width: 400px) {
-  .about-page .our-team .team-member-header h4 {
+  .about-page #our-team .team-member-header h4 {
     margin: 10px;
   }
 }
 
-.about-page .our-team p {
-  margin: 30px 30px;
+.about-page #our-team p {
+  margin: 30px 0px 30px 0px;
+  text-align: center;
+}
+
+section#img-downloads {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section#img-downloads .download-img-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 1024px;
+  max-width: 96%;
+}
+
+section#img-downloads .download-img-holder img {
+  width: 1024px;
+  max-width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section#img-downloads .download-img-holder .download-img-links-holder {
+  margin: 15px 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+section#img-downloads .download-img-holder .download-img-links-holder a {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=style.css.map */

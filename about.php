@@ -1,7 +1,7 @@
 <?php include('inc/header.php') ?>
-<div id="nav-spacer"></div>
-    
-    <header class="page-header">
+<div id="nav-bottom-border"></div>
+
+    <header class="page-header" id="about-header">
         <h1>
             ABOUT
         </h1>    
@@ -14,12 +14,12 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, provident neque et dolore a nobis iusto ea ipsa, dolorum veniam earum perferendis odit vitae reprehenderit explicabo architecto officia adipisci illo?
             </p>
         </section>
-        <section class="our-team">
+        <section id="our-team">
             <h3>OUR TEAM</h3>
             <div class="team-members-holder">
                 <div class="team-member">
                     <div class="team-member-header">
-                        <img src="./img/discord-logo.png" alt="">
+                        <img src="./img/team-profiles/vert-profile.png" alt="">
                         <h4>Vert</h4>
                     </div>
                     <p>Vert is the team leader and lead 3D modeler.</p>
@@ -27,16 +27,16 @@
                 <div class="team-member">
                     <div class="team-member-header">
                         <img src="./img/discord-logo.png" alt="">
-                        <h4>Maliu</h4>
+                        <h4>MaLiu</h4>
                     </div>
-                    <p>Maliu is the lead programmer for the racing game.</p>
+                    <p>MaLiu is the lead programmer for the racing game.</p>
                 </div>
                 <div class="team-member">
                     <div class="team-member-header">
-                        <img src="./img/discord-logo.png" alt="">
+                        <img src="./img/team-profiles/katoshiku-profile.png" alt="">
                         <h4>Katoshiku</h4>
                     </div>
-                    <p>Katoshiku recruits people to work on our various projects.</p>
+                    <p>Kato recruits people to work on our various projects. He is involved in the design process for the racing game and is a professional memer with memes of the top-most quality.</p>
                 </div>
                 <div class="team-member">
                     <div class="team-member-header">

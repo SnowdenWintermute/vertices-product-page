@@ -1,5 +1,5 @@
 <?php include('inc/header.php') ?>
-<div id="nav-spacer"></div>
+<div id="nav-bottom-border"></div>
 <header class="page-header">
         <h1>
             PROJECTS

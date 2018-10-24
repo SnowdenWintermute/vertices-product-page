@@ -1,4 +1,5 @@
 <nav id="topNav">
+    <div id="nav-links-holder">
     <ul class="navLinks" id="navLinksLeft">
         <li><a href="about.php">About</a>
         </li>
@@ -17,4 +18,5 @@
         </li>
     </ul>
     <div id="hamburger" class="hidden"><i class="fa fa-bars"></i></div>
+    </div>
 </nav>
