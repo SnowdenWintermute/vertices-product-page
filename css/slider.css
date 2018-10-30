@@ -92,9 +92,6 @@
 .slide-container .slide-img {
   width: 150%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: absolute;
   -webkit-transition: right cubic-bezier(0.39, 0.58, 0.57, 1) 5s, opacity ease 1s;
   transition: right cubic-bezier(0.39, 0.58, 0.57, 1) 5s, opacity ease 1s;

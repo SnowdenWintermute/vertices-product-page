@@ -93,9 +93,6 @@ $desktop: 1000px;
     .slide-img{
         width:150%;
         height:100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
         position: absolute;
         transition: right cubic-bezier(.39,.58,.57,1) 5s, opacity ease 1s;
     }
