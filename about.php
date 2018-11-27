@@ -3,15 +3,14 @@
 
     <header class="page-header" id="about-header">
         <h1>
-            ABOUT
+            WHAT WE DO
         </h1>    
     </header>
     
     <main class="page-body about-page">
         <section class="what-we-do">
-            <h3>WHAT WE DO</h3>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, provident neque et dolore a nobis iusto ea ipsa, dolorum veniam earum perferendis odit vitae reprehenderit explicabo architecto officia adipisci illo?
+            We are a group of individuals that imagine, and make our imaginations come to life. We work on various projects ranging from games, to movies. Our work is very important to us and as such we put the upmost attention and love into making them perfect.
             </p>
         </section>
         <section id="our-team">

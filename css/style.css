@@ -16,13 +16,14 @@
   font-family: "Arial";
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   background: #eed1dd;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 }
 
 svg {
@@ -56,8 +57,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: height .4s ease-out;
-  transition: height .4s ease-out;
+  -webkit-transition: height 0.4s ease-out;
+  transition: height 0.4s ease-out;
 }
 
 nav #nav-links-holder {
@@ -113,8 +114,8 @@ nav ul a {
   text-decoration: none;
   color: white;
   font-size: 1.6em;
-  -webkit-transition: text-shadow .3s;
-  transition: text-shadow .3s;
+  -webkit-transition: text-shadow 0.3s;
+  transition: text-shadow 0.3s;
   font-family: "TheLightFont";
 }
 
@@ -180,8 +181,8 @@ nav ul a:hover {
     height: 50px;
     width: 98%;
     background: #e2acc2;
-    -webkit-transition: background-color .5s;
-    transition: background-color .5s;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s;
   }
   nav ul li a {
     height: 100%;
@@ -201,7 +202,7 @@ nav ul a:hover {
   }
 }
 
-/*Show class for nav*/
+/* Show class for nav */
 .show {
   height: 365px;
 }
@@ -259,6 +260,7 @@ main .about-text-section {
 main #about {
   -webkit-box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
           box-shadow: 0px 30px 50px -50px rgba(0, 0, 0, 0.7);
+  padding-bottom: 100px;
 }
 
 main #projects {
@@ -386,8 +388,8 @@ footer #footer-social-links ul {
 footer #footer-social-links ul li i {
   font-size: 40px;
   color: white;
-  -webkit-transition: color ease .3s;
-  transition: color ease .3s;
+  -webkit-transition: color ease 0.3s;
+  transition: color ease 0.3s;
 }
 
 footer #footer-social-links ul li i:hover {
@@ -453,8 +455,8 @@ form {
   width: 900px;
   max-width: 100%;
   height: 750px;
-  background: #E2E2FE;
-  margin-top: 50px;
+  background: #b98cfc;
+  margin-top: 0px;
 }
 
 form label {
@@ -464,10 +466,13 @@ form label {
 
 form h3 {
   font-family: arial;
-  padding: 60px 0px 0px 0px;
+  margin: 0;
+  padding: 60px 0px 60px 0px;
 }
 
-form input, form textarea, form button {
+form input,
+form textarea,
+form button {
   margin: 10px 50px;
   width: 400px;
   max-width: 80%;
@@ -478,27 +483,37 @@ form input, form textarea, form button {
   border: 1px solid;
 }
 
-form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, form button::-webkit-input-placeholder {
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder,
+form button::-webkit-input-placeholder {
   font-family: "arial";
   color: black;
 }
 
-form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, form button:-ms-input-placeholder {
+form input:-ms-input-placeholder,
+form textarea:-ms-input-placeholder,
+form button:-ms-input-placeholder {
   font-family: "arial";
   color: black;
 }
 
-form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, form button::-ms-input-placeholder {
+form input::-ms-input-placeholder,
+form textarea::-ms-input-placeholder,
+form button::-ms-input-placeholder {
   font-family: "arial";
   color: black;
 }
 
-form input::placeholder, form textarea::placeholder, form button::placeholder {
+form input::placeholder,
+form textarea::placeholder,
+form button::placeholder {
   font-family: "arial";
   color: black;
 }
 
-form input:focus, form textarea:focus, form button:focus {
+form input:focus,
+form textarea:focus,
+form button:focus {
   -webkit-box-shadow: 0px 2px 3px #d94986;
           box-shadow: 0px 2px 3px #d94986;
 }

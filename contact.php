@@ -1,6 +1,6 @@
 <?php include('inc/header.php') ?>
 <div id="nav-bottom-border"></div>
-    <header class="page-header">
+    <header class="page-header" id="contact-header">
         <h1>
             CONTACT
         </h1>    

@@ -31,6 +31,8 @@ $desktop: 1000px;
 }
 .slide-container {
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   height: 500px;
   position: relative;
   overflow: hidden;

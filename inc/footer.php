@@ -33,7 +33,7 @@
                 <i class="fab fa-twitch"></i></a>
             </li>
             <li>
-                <a href="https://www.instagram.com/repeatedd/">
+                <a href="https://www.instagram.com/verttttices/">
                 <i class="fab fa-instagram"></i></a>
             </li>
         </ul>
