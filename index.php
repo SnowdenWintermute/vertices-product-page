@@ -14,9 +14,9 @@
             </g>
           </svg>
           </div>
-        <div class="slide-img slide-offscreen-right" id="img1"><img src="./img/1.png" alt=""></div>
-        <div class="slide-img slide-offscreen-right" id="img2"><img src="./img/2.png" alt=""></div>
-        <div class="slide-img slide-offscreen-right" id="img3"><img src="./img/3.jpg" alt=""></div>
+        <div class="slide-img slide-offscreen-right" id="img1"><img src="./img/C1.jpg" alt=""></div>
+        <div class="slide-img slide-offscreen-right" id="img2"><img src="./img/C2.jpg" alt=""></div>
+        <div class="slide-img slide-offscreen-right" id="img3"><img src="./img/C3.jpg" alt=""></div>
 
         <div id="slide-tab-holder"></div>
     </div>

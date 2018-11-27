@@ -6,10 +6,8 @@
 }
 
 .slide-container {
-  margin: 0 auto;
   width: 100%;
-  max-width: 1024px;
-  height: 400px;
+  height: 500px;
   position: relative;
   overflow: hidden;
   /* Buttons */
@@ -39,7 +37,7 @@
   height: 80px;
   width: 40px;
   background: #e2acc2;
-  opacity: .7;
+  opacity: 0.7;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,8 +47,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all ease .4s;
-  transition: all ease .4s;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
   fill: #f384b3;
 }
 
@@ -99,18 +97,36 @@
 
 .slide-container .slide-offscreen-right {
   opacity: 0;
-  right: -10vw;
+  right: -51%;
+}
+
+@media (max-width: 840px) {
+  .slide-container .slide-offscreen-right {
+    right: 60%;
+  }
 }
 
 .slide-container .slide-visible {
   opacity: 1;
-  right: 0;
+  right: -30%;
+}
+
+@media (max-width: 840px) {
+  .slide-container .slide-visible {
+    right: 130%;
+  }
 }
 
 .slide-container .slide-fade {
   opacity: 0;
   z-index: 2;
-  right: 0;
+  right: -30%;
+}
+
+@media (max-width: 840px) {
+  .slide-container .slide-fade {
+    right: 130%;
+  }
 }
 
 .slide-container .slide-item {
@@ -122,8 +138,8 @@
   width: 100%;
   top: 30%;
   left: 13%;
-  -webkit-transition: left ease .8s, opacity ease-out 1s;
-  transition: left ease .8s, opacity ease-out 1s;
+  -webkit-transition: left ease 0.8s, opacity ease-out 1s;
+  transition: left ease 0.8s, opacity ease-out 1s;
 }
 
 @media (max-width: 840px) {
@@ -139,8 +155,8 @@
   top: 30%;
   left: 13%;
   opacity: 0;
-  -webkit-transition: opacity ease .5s;
-  transition: opacity ease .5s;
+  -webkit-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
 }
 
 @media (max-width: 840px) {
@@ -190,8 +206,8 @@
   top: 50%;
   left: 13%;
   opacity: 1;
-  -webkit-transition: opacity ease 1s, left ease .8s;
-  transition: opacity ease 1s, left ease .8s;
+  -webkit-transition: opacity ease 1s, left ease 0.8s;
+  transition: opacity ease 1s, left ease 0.8s;
 }
 
 @media (max-width: 840px) {
@@ -283,7 +299,7 @@
   background-color: #e2acc2;
   border: 1px solid #d94986;
   z-index: 4;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #slide-tab-holder .slide-tab:hover {
@@ -293,8 +309,8 @@
 
 .btn-hidden {
   opacity: 0 !important;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 @media (max-width: 840px) {
