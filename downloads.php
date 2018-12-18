@@ -1,5 +1,4 @@
 <?php include('inc/header.php') ?>
-<div id="nav-bottom-border"></div>
     
     <main class="page-body">
     <header class="page-header">

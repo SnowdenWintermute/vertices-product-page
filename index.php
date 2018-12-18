@@ -1,5 +1,4 @@
 <?php include('inc/header.php') ?>
-<div id="nav-bottom-border"></div>
 <div class="slide-container" id="slide-container">
         <div class="slider-btn slider-btn-next btn-hidden" id="slider-btn-prev">
             <svg class="svg" version="1.1" xmlns="http://www.w3.org/1999/svg" viewBox="0 0 129 129" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
@@ -31,12 +30,7 @@
                 Vert's job is to design and create content for our movies and games. All our virtual worlds are carefully crafted by Vert with love and care.
                 </p></div>
             </div>
-            <div class="about-text-section" id="about-text-maliu">
-                <h3 class="sub-header">MALIU</h3>
-                <div><p>
-                Maliu is the programmer. They need a description for this info text. As soon as they submit me one I'll insert it in this section right here, right here this section.
-                </p></div>        
-            </div>
+
         </div>
         </section>
 

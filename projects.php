@@ -1,10 +1,9 @@
 <?php include('inc/header.php') ?>
-<div id="nav-bottom-border"></div>
-<header class="page-header">
+<!-- <header class="page-header">
         <h1>
             PROJECTS
         </h1>    
-    </header>
+    </header> -->
     <main class="page-body">
         <section class="main-section">
             <div class="flex-container">

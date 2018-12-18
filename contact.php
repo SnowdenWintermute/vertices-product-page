@@ -1,13 +1,12 @@
 <?php include('inc/header.php') ?>
-<div id="nav-bottom-border"></div>
-    <header class="page-header" id="contact-header">
+    <!-- <header class="page-header" id="contact-header">
         <h1>
             CONTACT
         </h1>    
-    </header>
+    </header> -->
     <main class="page-body">
         <section class="main-section">
-        <form action="submit-contact.php" method="POST">
+        <form action="submit-contact.php" method="POST" style="margin-top: 40px;">
             <h3>SEND US A MESSAGE</h3>
             <label for="name">Name:</label>
             <input name="name" type="text" required placeholder="Name"/>
