@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Vertices</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <nav id="topNav">
+      <div id="nav-links-holder">
+        <ul class="navLinks" id="navLinksLeft">
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+        <div id="brand">
+          <a href="index.html">
+            <img src="./img/brand.png" alt="" />
+          </a>
+        </div>
+        <ul class="navLinks" id="navLinksRight">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+        <div id="hamburger" class="hidden"><i class="fa fa-bars"></i></div>
+      </div>
+    </nav>
+    <div class="slide-container" id="slide-container">
+      <div class="slider-btn slider-btn-next btn-hidden" id="slider-btn-prev">
+        <svg
+          class="svg"
+          version="1.1"
+          xmlns="http://www.w3.org/1999/svg"
+          viewBox="0 0 129 129"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          enable-background="new 0 0 129 129"
+        >
+          <g>
+            <path
+              d="m88.6,121.3c0.8,0.8 1.8,1.2 2.9,1.2s2.1-0.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8,0l-54,53.9c-1.6,1.6-1.6,4.2 0,5.8l54,53.9z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="slider-btn slider-btn-prev btn-hidden" id="slider-btn-next">
+        <svg
+          class="svg"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 129 129"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          enable-background="new 0 0 129 129"
+        >
+          <g>
+            <path
+              d="m40.4,121.3c-0.8,0.8-1.8,1.2-2.9,1.2s-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.2 0-5.8l51-51-51-51c-1.6-1.6-1.6-4.2 0-5.8 1.6-1.6 4.2-1.6 5.8,0l53.9,53.9c1.6,1.6 1.6,4.2 0,5.8l-53.9,53.9z"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="slide-img slide-offscreen-right" id="img1">
+        <img src="./img/C1.jpg" alt="" />
+      </div>
+      <div class="slide-img slide-offscreen-right" id="img2">
+        <img src="./img/C2.jpg" alt="" />
+      </div>
+      <div class="slide-img slide-offscreen-right" id="img3">
+        <img src="./img/C3.jpg" alt="" />
+      </div>
+
+      <div id="slide-tab-holder"></div>
+    </div>
+
+    <main>
+      <section id="about">
+        <header id="about-header"><h1>ABOUT</h1></header>
+        <div class="flex-container" id="about-text">
+          <div class="about-text-section" id="about-text-vert">
+            <h3 class="sub-header">VERTICES</h3>
+            <div>
+              <p>
+                Vert's job is to design and create content for our movies and
+                games. All our virtual worlds are carefully crafted by Vert with
+                love and care.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <header id="projects-header"><h1>PROJECTS</h1></header>
+        <h3 class="sub-header">Low Poly Racer</h3>
+        <div class="flex-container">
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+            sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+            no sea takimata sanctus est Lorem ipsum dolor sit amet.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./js/touchEvents.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+  <footer>
+    <div id="links">
+      <a href="index.html">
+        <div id="footer-logo"><img src="./img/brand.png" alt="" /></div>
+      </a>
+      <div id="footer-links-holder">
+        <ul>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="downloads.html">Downloads</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="footer-social-links">
+      <ul>
+        <li>
+          <a
+            href="https://www.youtube.com/channel/UCjqYIEahx0tFxwrJgtGBxQw/featured"
+            target="_blank"
+          >
+            <i class="fab fa-youtube"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/verttttices">
+            <i class="fab fa-twitch"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/verttttices/">
+            <i class="fab fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
+    </div>
+
+    <div id="footer-info">
+      <p>
+        ©
+        <script type="text/javascript">
+          var today = new Date();
+          var year = today.getFullYear();
+          document.write(year);
+        </script>
+      </p>
+    </div>
+  </footer>
+</html>
